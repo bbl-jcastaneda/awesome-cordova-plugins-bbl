@@ -68,9 +68,8 @@ import { Observable } from 'rxjs';
 @Plugin({
   pluginName: 'Intellitrust',
   plugin: 'intellitrust', // npm package name, example: cordova-plugin-camera
-  pluginRef: '', // the variable reference to call the plugin, example: navigator.geolocation
+  pluginRef: 'Intellitrust', // the variable reference to call the plugin, example: navigator.geolocation
   repo: 'https://github.com/BelizeBankLimited/intellitrust', // the github repository URL for the plugin
-  install: '', // OPTIONAL install command, in case the plugin requires variables
   installVariables: [], // OPTIONAL the plugin requires variables
   platforms: ['Android', 'iOS'], // Array of platforms supported, example: ['Android', 'iOS']
 })
@@ -86,12 +85,15 @@ export class Intellitrust extends AwesomeCordovaNativePlugin {
   createNewSoftTokenIdentity(args: any): Promise<any> {
     return;
   }
+  @Cordova()
   deleteIdentity(args: any): Promise<any> {
     return;
   }
+  @Cordova()
   getOTP(args: any): Promise<any> {
     return;
   }
+  @Cordova()
   parseNotification(args: any): Promise<any> {
     return;
   }
