@@ -86,15 +86,15 @@ export class Intellitrust extends AwesomeCordovaNativePlugin {
     return;
   }
   @Cordova()
-  deleteIdentity(args: any): Promise<any> {
+  deleteIdentity(args?: any): Promise<any> {
     return;
   }
   @Cordova()
-  getOTP(args: any): Promise<any> {
+  getOTP(args?: any): Promise<any> {
     return;
   }
   @Cordova()
-  parseNotification(args: any): Promise<any> {
+  parseNotification(args?: any): Promise<any> {
     return;
   }
 }
